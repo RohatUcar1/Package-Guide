@@ -40,6 +40,7 @@ Errors
 Code  |  Description
 - Robomotion.ActiveDirectory.AddUserToGroup.InvalidGroupObjectId | Group Id is empty.
 - Robomotion.ActiveDirectory.AddUserToGroup.InvalidUserId | User Id is empty.
+- Robomotion.ActiveDirectory.AddUserToGroup.ResponseErr | Response Status is not OK.
 ## Connect
 
 Input
@@ -62,6 +63,7 @@ Code  |  Description
 - Robomotion.ActiveDirectory.Connect.InvalidClientId | Client Id is empty.
 - Robomotion.ActiveDirectory.Connect.InvalidClientSecret | Client Secret is empty.
 - Robomotion.ActiveDirectory.Connect.InvalidTenantId | Tenant Id is empty.
+- Robomotion.ActiveDirectory.Connect.ResponseErr | Response Status is not OK.
 ## Create Group
 
 Input
@@ -83,6 +85,7 @@ Errors
 Code  |  Description
 - Robomotion.ActiveDirectory.AddUserToGroup.InvalidGroupObjectId | Group Id is empty.
 - Robomotion.ActiveDirectory.AddUserToGroup.InvalidUserId | User Id is empty.
+- Robomotion.ActiveDirectory.CreateGroup.ResponseErr | Response Status is not OK.
 ## Create User
 
 Input
@@ -99,6 +102,10 @@ Name  | Key | Required | Type | Description
 
 Options
 
+Errors
+
+Code  |  Description
+- Robomotion.ActiveDirectory.CreateUser.ResponseErr | Response Status is not OK.
 ## Delete Group
 
 Input
@@ -119,6 +126,7 @@ Errors
 
 Code  |  Description
 - Robomotion.ActiveDirectory.DeleteGroup.InvalidGroupObjectId | Group Id is empty.
+- Robomotion.ActiveDirectory.DeleteGroup.ResponseErr | Response Status is not OK.
 
 ## Delete User
 
@@ -140,6 +148,7 @@ Errors
 
 Code  |  Description
 - Robomotion.ActiveDirectory.DeleteUser.InvalidGroupObjectId, User Id is empty.
+- Robomotion.ActiveDirectory.DeleteUser.ResponseErr | Response Status is not OK.
 
 ## Delete User From Group
 
@@ -163,6 +172,7 @@ Errors
 Code  |  Description
 - Robomotion.ActiveDirectory.DeleteUserFromGroup.InvalidGroupObjectId | Group Id is empty.
 - Robomotion.ActiveDirectory.DeleteUserFromGroup.InvalidUserId | User Id is empty.
+- Robomotion.ActiveDirectory.DeleteUserFromGroup.ResponseErr | Response Status is not OK.
 
 ## Get Group
 
@@ -184,6 +194,7 @@ Errors
 
 Code  |  Description
 - Robomotion.ActiveDirectory.GetGroup.InvalidGroupObjectId | Group Id is empty.
+- Robomotion.ActiveDirectory.GetGroup.ResponseErr | Response Status is not OK.
 
 ## Get User
 
@@ -205,6 +216,7 @@ Errors
 
 Code  |  Description
 - Robomotion.ActiveDirectory.GetGroup.InvalidUserId | User Id is empty.
+- Robomotion.ActiveDirectory.GetGroup.ResponseErr | Response Status is not OK.
 
 ## List Group Members
 
@@ -226,8 +238,29 @@ Errors
 
 Code  |  Description
 - Robomotion.ActiveDirectory.ListGroupMembers.InvalidGroupObjectId | Group Id is empty.
+- Robomotion.ActiveDirectory.ListGroupMembers.ResponseErr | Response Status is not OK.
 
-## Show All Groups
+## List All Groups
+
+Input
+
+Name  | Key | Required | Type | Description
+- Access Token | accesstoken | True | object | Access token for application.
+
+
+Output
+
+Name  | Key | Required | Type | Description
+- Result | result | True  | object | Response message for request.
+
+Options
+
+Errors
+
+Code  |  Description
+- Robomotion.ActiveDirectory.ListAllGroups.ResponseErr | Response Status is not OK.
+
+## List All Users
 
 Input
 
@@ -242,20 +275,10 @@ Name  | Key | Required | Type | Description
 
 Options
 
-## Show All Users
+Errors
 
-Input
-
-Name  | Key | Required | Type | Description
-- Access Token | accesstoken | True | object | Access token for application.
-
-
-Output
-
-Name  | Key | Required | Type | Description
-- Result | result | True  | object | Response message for request.
-
-Options
+Code  |  Description
+- Robomotion.ActiveDirectory.ListAllUsers.ResponseErr | Response Status is not OK.
 
 ## Update Group
 
@@ -278,6 +301,7 @@ Errors
 
 Code  |  Description
 - Robomotion.ActiveDirectory.UpdateGroup.InvalidGroupObjectId | Group Id is empty.
+- Robomotion.ActiveDirectory.UpdateGroup.ResponseErr | Response Status is not OK.
 
 ## Update User
 
@@ -300,11 +324,9 @@ Errors
 
 Code  |  Description
 - Robomotion.ActiveDirectory.UpdateUser.InvalidGroupObjectId | User Id is empty.
+- Robomotion.ActiveDirectory.UpdateUser.ResponseErr | Response Status is not OK.
 
 
 
-```bash
-go get -u github.com/iancoleman/strcase
-```
 
 
