@@ -14,8 +14,8 @@
 | `Get Group` | `This node retrieves info about specific group` |
 | `Get User`                              | `This node retrieves info about specific user`    |
 | `List Group Members`                         | `This node lists members of a specific group`    |
-| `Show All Groups`                         | `This node shows all groups in directory`    |
-| `Show All Users`                         | `This node shows all users in directory`    |
+| `List All Groups`                         | `This node shows all groups in directory`    |
+| `List All Users`                         | `This node shows all users in directory`    |
 | `Update Group`                         | `This node updates group properties`    |
 | `Update User`                         | `This node updates user properties`    |
 
